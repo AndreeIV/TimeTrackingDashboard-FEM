@@ -1,0 +1,108 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.container__card {
+    background-color: v.$Dark-blue;
+    border-radius: 1.5rem;
+    
+    @include m.desktop {
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+
+    .container__card-user {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: v.$Blue;
+        border-radius: 1.5rem;
+
+        gap: 2rem;
+        padding: 3rem;
+
+        @include m.desktop {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 4.5rem;
+        }
+        
+
+        &>img {
+            width: 7.5rem;
+
+            border: 3px solid white;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+        .container__card-user-info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+
+            gap: .3rem;
+
+            .info-report {
+                color: v.$light;
+                font-weight: v.$light;
+                font-size: 1.6rem;
+            }
+
+            .info-name {
+                font-size: 2.5rem;
+                font-weight: v.$light;
+                margin: 0;
+                color: white;
+
+                @include m.desktop {
+                    font-size: 4rem;
+                }
+                
+            }
+        }
+    }
+
+    .container__card-timeframes {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 3rem;
+        font-size: 1.8rem;
+
+        @include m.desktop {
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        &>button {
+            border: none;
+            background-color: transparent;
+            color: v.$Desaturated-blue;
+            cursor: pointer;
+
+
+            @include m.desktop {
+                &:hover {
+                    color: v.$Pale-blue;
+                }
+
+                &:focus {
+                    color: v.$Pale-blue;
+                }
+            }
+            
+        }
+        
+    }
+}

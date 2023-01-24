@@ -10,70 +10,149 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="./">
+  <link rel="stylesheet" href="./build/css/app.css">
 
 </head>
 <body>
-
-  Report for
-  Jeremy Robson
-
-  Daily
-  Weekly
-  Monthly
-
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
-
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
-
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
+  <main class="container__app">
+    <div class="container__card">
+      <div class="container__card-user">
+        <img src="./images/image-jeremy.png" alt="user">
   
-  <div class="attribution" style="text-align: center;">
+        <div class="container__card-user-info">
+  
+          <div class="info-report">Report for</div>
+          <h1 class="info-name">Jeremy Robson</h1>
+  
+        </div>
+      </div>
+  
+      <div class="container__card-timeframes">
+        <button id="time">Daily</button>
+        <button class="active" id="time">Weekly</button>
+        <button id="time">Monthly</button>
+      </div>
+    </div>
+
+
+
+    <div class="container__title work">
+      <div class="container__title-info">
+        <div class="container__title-options">
+
+            <h3 class="name">Work</h3>
+            <img src="./images/icon-ellipsis.svg" alt="settings">
+        
+        </div>
+
+        <div class="container__title-hours" id="container__work" data-name="Work">
+          <h2 class="hours">32hrs</h2>
+          <h3 class="last">Last Week - 36hrs</h3>
+        
+        </div>
+    </div>
+      
+    </div>
+
+
+    <div class="container__title play">
+      <div class="container__title-info">
+        <div class="container__title-options">
+
+          <h3 class="name">Play</h3>
+          <img class="ellipsis" src="./images/icon-ellipsis.svg" alt="settings">
+          
+        </div>
+
+        <div class="container__title-hours" id="container__work" data-name="Play">
+
+          <h2 class="hours">10hrs</h2>
+          <h3 class="last">Last Week - 8hrs</h3>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container__title study">
+      <div class="container__title-info">
+        <div class="container__title-options">
+
+          <h3 class="name">Study</h3>
+          <img src="./images/icon-ellipsis.svg" alt="settings">
+          
+        </div>
+
+        <div class="container__title-hours" id="container__work" data-name="Study">
+
+          <h2 class="hours">4hrs</h2>
+          <h3 class="last">Last Week - 7hrs</h3>
+
+        </div>
+      </div>
+      
+    </div>
+    
+    <div class="container__title exercise">
+      <div class="container__title-info">
+        <div class="container__title-options">
+
+          <h3 class="name">Exercise</h3>
+          <img src="./images/icon-ellipsis.svg" alt="settings">
+          
+        </div>
+
+        <div class="container__title-hours" id="container__work" data-name="Exercise">
+
+          <h2 class="hours">4hrs</h2>
+          <h3 class="last">Last Week - 5hrs</h3>
+
+        </div>
+      </div>
+      
+    </div>
+    <div class="container__title social">
+      <div class="container__title-info">
+        <div class="container__title-options">
+
+          <h3 class="name">Social</h3>
+          <img src="./images/icon-ellipsis.svg" alt="settings">
+          
+        </div>
+
+        <div class="container__title-hours" id="container__work" data-name="Social">
+
+          <h2 class="hours">5hrs</h2>
+          <h3 class="last">Last Week - 10hrs</h3>
+
+        </div>
+      </div>
+      
+    </div>
+    <div class="container__title self_care">
+      <div class="container__title-info">
+        <div class="container__title-options">
+
+          <h3 class="name">Self Care</h3>
+          <img src="./images/icon-ellipsis.svg" alt="settings">
+          
+        </div>
+
+        <div class="container__title-hours" id="container__work" data-name="Self Care">
+
+          <h2 class="hours">2hrs</h2>
+          <h3 class="last">Last Week - 2hrs</h3>
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <div class="attribution" style="text-align: center; font-size: 10px;">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Andree Ismodes</a>.
   </div>
+
+  <script src="./build/js/index.js"></script>
 </body>
 </html>

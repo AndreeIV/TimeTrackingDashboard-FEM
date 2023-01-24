@@ -1,0 +1,167 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.container__title {
+
+    border-radius: 1.5rem;
+
+    .container__title-info {
+        width: 100%;
+        margin-top: 4rem;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        background-color: v.$Dark-blue;
+        padding: 2.8rem 2rem;
+        border-radius: 1.5rem;
+
+        @include m.desktop {
+            margin-top: 4.5rem;
+            padding: 3rem;
+            cursor: pointer;
+
+            &:hover {
+                background-color: v.$Desaturated-blue;
+            }
+        }
+        
+
+        .container__title-options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &>h3 {
+                font-size: 2rem;
+                font-weight: v.$regular;
+                color: white;
+                margin: 0;
+            }
+
+            &>img.ellipsis {
+                cursor: pointer;
+            }
+
+        }
+
+        .container__title-hours {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            @include m.desktop {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 2rem;
+            }
+            
+            
+            &>h2 {
+                font-size: 3.3rem;
+                font-weight: v.$light;
+                color: white;
+                margin: 0;
+
+                @include m.desktop {
+                    font-size: 5.5rem;
+                }
+                
+            }
+            &>h3 {
+                font-weight: v.$light;
+                font-size: 1.4rem;
+                margin: 0;
+            }
+        }
+    }
+}
+.work {
+    background-repeat: no-repeat;
+    background-image: url('./../../images/icon-work.svg');
+    background-position: 23rem -10px;
+
+    background-color: v.$Work-light-red;
+
+    display: flex;
+    align-items: flex-end;
+
+    @include m.desktop {
+        background-position: 14.5rem -12px;
+    }
+    
+}
+
+.play {
+    background-repeat: no-repeat;
+    background-image: url('./../../images/icon-play.svg');
+    background-position: 23rem -3.5px;
+
+    background-color: v.$Play-soft-blue;
+
+    display: flex;
+    align-items: flex-end;
+    @include m.desktop {
+        background-position: 14.5rem -12px;
+    }
+    
+}
+.study {
+    background-repeat: no-repeat;
+    background-image: url('./../../images/icon-study.svg');
+    background-position: 23rem -3.5px;
+
+    background-color: v.$Study-light-red;
+
+    display: flex;
+    align-items: flex-end;
+
+    @include m.desktop {
+        background-position: 14.5rem -12px;
+    }
+}
+
+.exercise {
+    background-repeat: no-repeat;
+    background-image: url('./../../images/icon-exercise.svg');
+    background-position: 23rem -3.5px;
+
+    background-color: v.$Exercise-lime-green;
+
+    display: flex;
+    align-items: flex-end;
+
+    @include m.desktop {
+        background-position: 14.5rem -6px;
+    }
+}
+
+.social {
+    background-repeat: no-repeat;
+    background-image: url('./../../images/icon-social.svg');
+    background-position: 23rem -3.5px;
+
+    background-color: v.$Social-violet;
+
+    display: flex;
+    align-items: flex-end;
+
+    @include m.desktop {
+        background-position: 14.5rem -12px;
+    }
+}
+
+.self_care {
+    background-repeat: no-repeat;
+    background-image: url('./../../images/icon-self-care.svg');
+    background-position: 23rem -3.5px;
+    
+    background-color: v.$SelfCare-soft-orange;
+
+    display: flex;
+    align-items: flex-end;
+
+    @include m.desktop {
+        background-position: 14.5rem -12px;
+    }
+}
